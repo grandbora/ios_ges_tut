@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'ScSampleProject' target in the 'ScSampleProject' project
+// Prefix header for all source files of the 'Gesture' target in the 'Gesture' project
 //
 
 #import <Availability.h>

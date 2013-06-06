@@ -1,22 +1,14 @@
 //
-//  ScSampleProjectAppDelegate.m
-//  ScSampleProject
+//  TouchAppDelegate.m
+//  Gesture
 //
-//  Created by Bora Tunca on 5/20/13.
+//  Created by Bora Tunca on 6/6/13.
 //  Copyright (c) 2013 Bora Tunca. All rights reserved.
 //
 
-#import "ScSampleProjectAppDelegate.h"
-#import "SCUI.h"
+#import "TouchAppDelegate.h"
 
-@implementation ScSampleProjectAppDelegate
-
-+ (void) initialize
-{
-    [SCSoundCloud setClientID:@"58c45d86716c0f55e0197b6892ba59cd"
-                       secret:@"c33fcc0e14d9ca4994e2e6c965529467"
-                  redirectURL:[NSURL URLWithString:@"scsampleproject://oauth"]];
-}
+@implementation TouchAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

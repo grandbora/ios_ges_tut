@@ -1,2 +1,2 @@
-sc-ios-tutorial
+ios_ges_tut
 ===============

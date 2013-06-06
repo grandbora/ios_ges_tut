@@ -1,18 +1,18 @@
 //
-//  ScSampleProjectViewController.m
-//  ScSampleProject
+//  TouchViewController.m
+//  Gesture
 //
-//  Created by Bora Tunca on 5/20/13.
+//  Created by Bora Tunca on 6/6/13.
 //  Copyright (c) 2013 Bora Tunca. All rights reserved.
 //
 
-#import "ScSampleProjectViewController.h"
+#import "TouchViewController.h"
 
-@interface ScSampleProjectViewController ()
+@interface TouchViewController ()
 
 @end
 
-@implementation ScSampleProjectViewController
+@implementation TouchViewController
 
 - (void)viewDidLoad
 {
