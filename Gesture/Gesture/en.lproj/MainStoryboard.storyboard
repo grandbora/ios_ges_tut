@@ -1,23 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11E2702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Touch View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="TouchViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUy-eV-iYh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="r65-Tx-Uod"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qb-W4-HdT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="touches :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCd-rB-vd8">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCG-3U-fQz">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="taps :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgh-Ue-2Kp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="l5Z-rR-nPW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV6-LQ-ay0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gCd-rB-vd8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="22" id="2u4-pQ-cQu"/>
+                            <constraint firstItem="jgh-Ue-2Kp" firstAttribute="top" secondItem="gCd-rB-vd8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4Yv-Ee-vIQ"/>
+                            <constraint firstItem="7Qb-W4-HdT" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="138" id="EAD-Ud-3M6"/>
+                            <constraint firstItem="OUy-eV-iYh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UfR-zm-TsC"/>
+                            <constraint firstItem="jCG-3U-fQz" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="140" id="X68-Se-Kgi"/>
+                            <constraint firstItem="jCG-3U-fQz" firstAttribute="baseline" secondItem="gCd-rB-vd8" secondAttribute="baseline" type="default" id="XAW-7S-704"/>
+                            <constraint firstItem="7Qb-W4-HdT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="38" id="acF-go-A4j"/>
+                            <constraint firstItem="jgh-Ue-2Kp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="23" id="cSV-zF-yJE"/>
+                            <constraint firstItem="OUy-eV-iYh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="42" id="fHd-Fs-Hgr"/>
+                            <constraint firstItem="gCd-rB-vd8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="fag-dq-m6m"/>
+                            <constraint firstItem="fV6-LQ-ay0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="141" id="hcH-BB-1cs"/>
+                            <constraint firstItem="fV6-LQ-ay0" firstAttribute="baseline" secondItem="jgh-Ue-2Kp" secondAttribute="baseline" type="default" id="t3b-W7-RLc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="methodStatus" destination="7Qb-W4-HdT" id="9an-rx-uHI"/>
+                        <outlet property="tapStatus" destination="fV6-LQ-ay0" id="REz-N3-1Wb"/>
+                        <outlet property="touchStatus" destination="jCG-3U-fQz" id="MdL-sG-0gr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TouchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TouchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="methodStatus" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tapStatus" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="touchStatus" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
