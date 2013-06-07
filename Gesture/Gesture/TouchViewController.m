@@ -61,4 +61,53 @@
     _tapStatus.text = [NSString stringWithFormat:
                        @"%d taps", tapCount];
 }
+- (IBAction)longPressDetected:(id)sender {
+    _statusLabel.text = @"Long Press";
+}
+
+- (IBAction)panDetected:(id)sender {
+//    _statusLabel.text = @"Pan Press";
+}
+
+- (IBAction)swipeDetected:(id)sender {
+    _statusLabel.text = @"Long Press";
+}
+
+- (IBAction)rotationDetected:(id)sender {
+    CGFloat radians =
+    [(UIRotationGestureRecognizer *)sender rotation];
+    CGFloat velocity =
+    [(UIRotationGestureRecognizer *)sender velocity];
+    
+    NSString *resultString = [[NSString alloc] initWithFormat:
+                              @"Rotation - Radians = %f, velocity = %f",
+                              radians, velocity];
+    _statusLabel.text = resultString;
+}
+
+- (IBAction)pinchDetected:(id)sender {
+    CGFloat scale =
+    [(UIPinchGestureRecognizer *)sender scale];
+    CGFloat velocity =
+    [(UIPinchGestureRecognizer *)sender velocity];
+    
+    NSString *resultString = [[NSString alloc] initWithFormat:
+                              @"Pinch - scale = %f, velocity = %f",
+                              scale, velocity];
+    _statusLabel.text = resultString;
+}
+
+- (IBAction)tapDetected:(id)sender {
+    _statusLabel.text = @"Double Tap";
+}
+
+-(void)PlayClick
+{
+    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                               pathForResource:@"click"
+                                               ofType:@"caf"]];
+    AVAudioPlayer *click = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
+    [click play];
+    [click release];
+}
 @end
