@@ -50,4 +50,15 @@
                        @"%d taps", tapCount];
 }
 
+- (void) touchesEnded:(NSSet *)touches
+            withEvent:(UIEvent *)event
+{
+    NSUInteger touchCount = [touches count];
+    NSUInteger tapCount = [[touches anyObject] tapCount];
+    _methodStatus.text = @"touchesEnded";
+    _touchStatus.text = [NSString stringWithFormat:
+                         @"%d touches", touchCount];
+    _tapStatus.text = [NSString stringWithFormat:
+                       @"%d taps", tapCount];
+}
 @end

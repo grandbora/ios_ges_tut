@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TouchViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *status;
 @property (weak, nonatomic) IBOutlet UILabel *tapStatus;
 @property (weak, nonatomic) IBOutlet UILabel *touchStatus;
 @property (weak, nonatomic) IBOutlet UILabel *methodStatus;

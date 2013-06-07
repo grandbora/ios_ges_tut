@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11E2702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -48,30 +48,53 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIE-WT-Sqr">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gCd-rB-vd8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="22" id="2u4-pQ-cQu"/>
                             <constraint firstItem="jgh-Ue-2Kp" firstAttribute="top" secondItem="gCd-rB-vd8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4Yv-Ee-vIQ"/>
                             <constraint firstItem="7Qb-W4-HdT" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="138" id="EAD-Ud-3M6"/>
                             <constraint firstItem="OUy-eV-iYh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UfR-zm-TsC"/>
+                            <constraint firstItem="VIE-WT-Sqr" firstAttribute="top" secondItem="3" secondAttribute="top" constant="209" id="WCH-lP-vNj"/>
                             <constraint firstItem="jCG-3U-fQz" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="140" id="X68-Se-Kgi"/>
                             <constraint firstItem="jCG-3U-fQz" firstAttribute="baseline" secondItem="gCd-rB-vd8" secondAttribute="baseline" type="default" id="XAW-7S-704"/>
                             <constraint firstItem="7Qb-W4-HdT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="38" id="acF-go-A4j"/>
+                            <constraint firstItem="VIE-WT-Sqr" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="112" id="acJ-Tw-Vvr"/>
                             <constraint firstItem="jgh-Ue-2Kp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="23" id="cSV-zF-yJE"/>
                             <constraint firstItem="OUy-eV-iYh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="42" id="fHd-Fs-Hgr"/>
                             <constraint firstItem="gCd-rB-vd8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="fag-dq-m6m"/>
                             <constraint firstItem="fV6-LQ-ay0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="141" id="hcH-BB-1cs"/>
                             <constraint firstItem="fV6-LQ-ay0" firstAttribute="baseline" secondItem="jgh-Ue-2Kp" secondAttribute="baseline" type="default" id="t3b-W7-RLc"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WUb-Zo-Ibb" appends="YES" id="bqG-9r-jqz"/>
+                            <outletCollection property="gestureRecognizers" destination="p9w-wy-EWM" appends="YES" id="m8e-VT-wFt"/>
+                            <outletCollection property="gestureRecognizers" destination="Yiq-z7-iNc" appends="YES" id="e7Y-BG-BuL"/>
+                            <outletCollection property="gestureRecognizers" destination="qFY-DF-vBI" appends="YES" id="aPo-vu-KO1"/>
+                            <outletCollection property="gestureRecognizers" destination="xRb-2f-dmU" appends="YES" id="60E-qs-BRo"/>
+                            <outletCollection property="gestureRecognizers" destination="K8F-Qa-xir" appends="YES" id="Vbj-fX-D2K"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="methodStatus" destination="7Qb-W4-HdT" id="9an-rx-uHI"/>
+                        <outlet property="status" destination="VIE-WT-Sqr" id="hZK-J6-2np"/>
                         <outlet property="tapStatus" destination="fV6-LQ-ay0" id="REz-N3-1Wb"/>
                         <outlet property="touchStatus" destination="jCG-3U-fQz" id="MdL-sG-0gr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WUb-Zo-Ibb"/>
+                <pinchGestureRecognizer id="p9w-wy-EWM"/>
+                <rotationGestureRecognizer id="Yiq-z7-iNc"/>
+                <swipeGestureRecognizer direction="right" id="qFY-DF-vBI"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xRb-2f-dmU"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="K8F-Qa-xir"/>
             </objects>
         </scene>
     </scenes>
@@ -83,6 +106,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TouchViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="methodStatus" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="status" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="tapStatus" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="touchStatus" candidateClass="UILabel"/>
             </relationships>
