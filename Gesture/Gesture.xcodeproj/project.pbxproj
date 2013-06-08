@@ -18,6 +18,8 @@
 		8436B9CC17610FBD00B06153 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8436B9CB17610FBD00B06153 /* Default-568h@2x.png */; };
 		8436B9CF17610FBD00B06153 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8436B9CD17610FBD00B06153 /* MainStoryboard.storyboard */; };
 		8436B9D217610FBD00B06153 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436B9D117610FBD00B06153 /* TouchViewController.m */; };
+		84F5AEA41762801E0072B481 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2B7C517627AEB007D3F1D /* AVFoundation.framework */; };
+		84F5AEA6176282130072B481 /* click-yes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F5AEA5176282130072B481 /* click-yes.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		8436B9CE17610FBD00B06153 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8436B9D017610FBD00B06153 /* TouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
 		8436B9D117610FBD00B06153 /* TouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
+		84F2B7C517627AEB007D3F1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		84F5AEA5176282130072B481 /* click-yes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "click-yes.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F5AEA41762801E0072B481 /* AVFoundation.framework in Frameworks */,
 				8436B9B617610FBD00B06153 /* UIKit.framework in Frameworks */,
 				8436B9B817610FBD00B06153 /* Foundation.framework in Frameworks */,
 				8436B9BA17610FBD00B06153 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +61,7 @@
 		8436B9A917610FBD00B06153 = {
 			isa = PBXGroup;
 			children = (
+				84F5AEA5176282130072B481 /* click-yes.mp3 */,
 				8436B9BB17610FBD00B06153 /* Gesture */,
 				8436B9B417610FBD00B06153 /* Frameworks */,
 				8436B9B317610FBD00B06153 /* Products */,
@@ -73,6 +79,7 @@
 		8436B9B417610FBD00B06153 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84F2B7C517627AEB007D3F1D /* AVFoundation.framework */,
 				8436B9B517610FBD00B06153 /* UIKit.framework */,
 				8436B9B717610FBD00B06153 /* Foundation.framework */,
 				8436B9B917610FBD00B06153 /* CoreGraphics.framework */,
@@ -164,6 +171,7 @@
 				8436B9CA17610FBD00B06153 /* Default@2x.png in Resources */,
 				8436B9CC17610FBD00B06153 /* Default-568h@2x.png in Resources */,
 				8436B9CF17610FBD00B06153 /* MainStoryboard.storyboard in Resources */,
+				84F5AEA6176282130072B481 /* click-yes.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				8436B9D717610FBD00B06153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

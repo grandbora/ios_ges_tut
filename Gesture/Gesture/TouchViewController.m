@@ -36,6 +36,10 @@
                          @"%d touches", touchCount];
     _tapStatus.text = [NSString stringWithFormat:
                        @"%d taps", tapCount];
+    
+
+    [self playClick];
+    [self showMessage];
 }
 
 - (void) touchesMoved:(NSSet *)touches
@@ -101,13 +105,22 @@
     _statusLabel.text = @"Double Tap";
 }
 
--(void)PlayClick
+-(void)playClick
 {
     NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                               pathForResource:@"click"
-                                               ofType:@"caf"]];
+                                               pathForResource:@"click-yes"
+                                               ofType:@"mp3"]];
     AVAudioPlayer *click = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
     [click play];
-    [click release];
+}
+
+-(IBAction)showMessage
+{
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Hello World!"
+                                                      message:@"This is your first UIAlertview message."
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+    [message show];
 }
 @end
